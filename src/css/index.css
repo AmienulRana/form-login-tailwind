@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Viga&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.wrapperJumb {
+  width: 50%;
+  height: auto;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 50px;
+}
+.wrapperJumb img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  z-index: -2;
+}
+.wrapperJumb::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #04396c;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 40%;
+}
+.logo h1 {
+  font-family: "Viga", sans-serif;
+}
+.wrapperInput {
+  min-height: 100vh;
+}
+label {
+  color: #535353;
+}
+input[type="text"],
+input[type="password"] {
+  height: 50px;
+  padding-left: 15px;
+  border-radius: 6px;
+  border: 1px solid #ababab;
+  margin-top: 10px;
+  outline: none;
+}
+input:focus {
+  border-color: #035b96;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+  width: 18px;
+  height: 18px;
+}
+
+.forgotPassword {
+  color: #04396c;
+}
+
+.submit {
+  background: #04396c;
+  height: 45px;
+}
+
+/* page sign up */
+p.my-4 {
+  color: #ababab;
+}
+p.my-4 a {
+  color: #04396c;
+}
+/*  */
+
+/* page validation */
+.inputOTP input {
+  margin: auto 10px;
+  text-align: center;
+  border-radius: 5px;
+  padding-left: 0;
+}
+/*  */
+
+/* responsive breakpoint */
+/*  Small devices (landscape phones, 576px and up) */
+@media screen and (max-width: 767.98px) {
+  h2 {
+    font-size: 24px;
+  }
+}
+
+/*  */
